@@ -1,8 +1,10 @@
 name: Snippet Analysis
 
-# add a comment
+# add a comment - added on push
 
 on:
+  push:
+    branches: [ main, master, develop, stage, release ]
   pull_request:
     types: [opened, reopened]
 
