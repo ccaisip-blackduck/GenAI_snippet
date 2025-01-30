@@ -1,6 +1,6 @@
 name: Snippet Analysis
 
-# add a comment
+# add a comment, save as pull request
 
 on:
   pull_request:
