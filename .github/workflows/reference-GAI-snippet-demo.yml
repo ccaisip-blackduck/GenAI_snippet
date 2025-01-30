@@ -126,7 +126,9 @@ jobs:
         id: comment
         uses: actions/github-script@v6
         with:
-          github-token: ${{secrets.WORKFLOW_GIT_ACCESS_TOKEN}}
+          # CC: change to use GITHUB_TOKEN
+          # github-token: ${{secrets.WORKFLOW_GIT_ACCESS_TOKEN}}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const fs = require('fs');
             const folderPath = '.snippet-licenses';
