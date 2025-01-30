@@ -18,7 +18,7 @@ jobs:
           # CC: change vars to use Vars/secrets from CI/CD Integrations settings
           # RESPONSE=$(curl -k -X POST -H "Authorization: token ${{ secrets.BLACK_DUCK_API_TOKEN }}" "https://${{ vars.HOSTNAME }}/api/tokens/authenticate")
           echo "token = ${{ secrets.BLACKDUCKSCA_TOKEN }}"
-          echo "URL = ${{ vars.BLACKDUCKSCA_URL }}"
+          echo "URL = ${{ vars.BLACKDUCKSCA_URL }}/api/tokens/authenticate"
           echo "curl:" curl -k -X POST -H "Authorization: token ${{ secrets.BLACKDUCKSCA_TOKEN }} " "${{ vars.BLACKDUCKSCA_URL }}/api/tokens/authenticate"
 
           RESPONSE=$(curl -k -X POST -H "Authorization: token ${{ secrets.BLACKDUCKSCA_TOKEN }}" "${{ vars.BLACKDUCKSCA_URL }}/api/tokens/authenticate")
