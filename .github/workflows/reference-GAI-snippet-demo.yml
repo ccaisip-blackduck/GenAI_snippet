@@ -1,5 +1,7 @@
 name: Snippet Analysis
 
+# add a comment
+
 on:
   pull_request:
     types: [opened, reopened]
