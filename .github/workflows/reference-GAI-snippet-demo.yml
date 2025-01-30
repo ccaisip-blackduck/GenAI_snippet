@@ -1,6 +1,6 @@
 name: Snippet Analysis
 
-# add a comment - added on push
+# add a comment - added on 1/30/2025
 # add BLACKDUCSCA_URL variable
 # add BLACKDUCKSCA_TOKEN secret
 # Set GitHUb token to read/write: https://github.com/ccaisip-blackduck/GenAI_snippet/settings/actions  
