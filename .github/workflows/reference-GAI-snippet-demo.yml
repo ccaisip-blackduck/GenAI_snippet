@@ -6,8 +6,8 @@ name: Snippet Analysis
 # Set GitHUb token to read/write: https://github.com/ccaisip-blackduck/GenAI_snippet/settings/actions  
 
 on:
-  push:
-    branches: [ main, master, develop, stage, release ]
+  #push:
+  #  branches: [ main, master, develop, stage, release ]
   pull_request:
     types: [opened, reopened]
 
